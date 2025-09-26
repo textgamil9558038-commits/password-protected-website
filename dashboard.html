@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Your Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <h1>🎉 Welcome to Your Website!</h1>
+                    <p>You have successfully accessed your private website</p>
+                </div>
+                <button onclick="logout()" class="btn-logout">Logout</button>
+            </header>
+            
+            <div class="dashboard-content">
+                <div class="welcome-section">
+                    <h2>Dashboard Overview</h2>
+                    <p>This is your secure, password-protected website hosted completely free on GitHub Pages.</p>
+                </div>
+                
+                <div class="password-change-section">
+                    <h3>🔑 Change Password</h3>
+                    <form id="passwordChangeForm">
+                        <div class="input-group">
+                            <input type="password" id="newPassword" placeholder="New password" required minlength="4">
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="confirmPassword" placeholder="Confirm new password" required>
+                        </div>
+                        <button type="submit" class="btn-success">Update Password</button>
+                    </form>
+                    <div id="successMessage" class="success-message"></div>
+                </div>
+                
+                <div class="features-section">
+                    <h3>🚀 Website Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">💰</div>
+                            <h4>100% Free</h4>
+                            <p>No hosting costs, completely free</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔐</div>
+                            <h4>Secure</h4>
+                            <p>Password protected access</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h4>Responsive</h4>
+                            <p>Works on all devices</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚙️</div>
+                            <h4>Customizable</h4>
+                            <p>Easy to modify and extend</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quick-links">
+                    <h3>🔧 Quick Actions</h3>
+                    <div class="action-buttons">
+                        <button class="btn-secondary" onclick="showMessage('Feature coming soon!')">Add Content</button>
+                        <button class="btn-secondary" onclick="showMessage('Feature coming soon!')">Customize Design</button>
+                        <button class="btn-secondary" onclick="showMessage('Feature coming soon!')">Add Pages</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
