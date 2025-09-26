@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Secure Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <h1>🔒 Secure Access</h1>
+            </div>
+            <p class="subtitle">Enter password to access the website</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            
+            <div id="errorMessage" class="error-message"></div>
+            
+            <div class="info-box">
+                <h3>Default Login Info:</h3>
+                <p><strong>Password:</strong> 123456</p>
+                <p>You can change the password after login</p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
